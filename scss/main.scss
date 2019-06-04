@@ -52,9 +52,6 @@ body {
   transition-duration: 900ms;
   transition-timing-function: ease-out;
   z-index: 1;
-  align-items: center;
-
-  justify-content: center;
   flex-direction: column;
 
   &.show {
@@ -73,5 +70,5 @@ body {
 .btn-home {
   font-size: 12pt;
   margin: 5px;
-  border-radius: 10px;
+  border-radius: 9px;
 }
