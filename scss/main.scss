@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+  scrollbar-width: 0px;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.overlay-menu-toggle-button {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#button-bar {
+  margin: 0 0 5px 0;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.overlay-menu {
+  color: white;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  transition-duration: 900ms;
+  transition-timing-function: ease-out;
+  z-index: 1;
+
+  &.show {
+    background-color: red;
+    opacity: 0.8;
+    transition-duration: 900ms;
+    transition-timing-function: ease-out;
+  }
+}
+
+.overlay-menu-item {
+  padding-top: 50vh;
+  text-align: center;
+  margin: auto;
+  z-index: 1;
+}
