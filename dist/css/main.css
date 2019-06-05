@@ -2,8 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: grey;
-  scrollbar-width: 0px;
-}
+  scrollbar-width: 0px; }
 
 .overlay-menu-toggle-button {
   width: 25px;
@@ -12,8 +11,7 @@ body {
   top: 15px;
   right: 15px;
   cursor: pointer;
-  z-index: 2;
-}
+  z-index: 2; }
 
 #button-bar {
   width: 25px;
@@ -21,8 +19,7 @@ body {
   height: 3px;
   background-color: white;
   border-radius: 3px;
-  z-index: 2;
-}
+  z-index: 2; }
 
 #button-bar-top {
   width: 20px;
@@ -30,8 +27,7 @@ body {
   height: 3px;
   background-color: white;
   border-radius: 3px;
-  z-index: 2;
-}
+  z-index: 2; }
 
 #button-bar-bottom {
   width: 17px;
@@ -39,8 +35,7 @@ body {
   margin: 0 0 3px 0;
   background-color: white;
   border-radius: 3px;
-  z-index: 2;
-}
+  z-index: 2; }
 
 .overlay-menu {
   display: flex;
@@ -52,22 +47,27 @@ body {
   transition-duration: 900ms;
   transition-timing-function: ease-out;
   z-index: 1;
-  flex-direction: column;
-}
-.overlay-menu.show {
-  background-color: #ccc;
-  opacity: 0.8;
-  transition-duration: 900ms;
-  transition-timing-function: ease-out;
-}
+  flex-direction: column; }
+  .overlay-menu.show {
+    background-color: #ccc;
+    opacity: 0.8;
+    transition-duration: 900ms;
+    transition-timing-function: ease-out; }
+
+.photography-window {
+  color: white;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: -1; }
+  .photography-window.show {
+    background-color: red; }
 
 .overlay-menu-items {
   margin: auto;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .btn-home {
   font-size: 12pt;
   margin: 5px;
-  border-radius: 9px;
-}
+  border-radius: 9px; }
