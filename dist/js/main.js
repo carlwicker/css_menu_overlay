@@ -41,9 +41,7 @@ function fadeInPhotographyWindow() {
     overlayMenu.classList.remove("show");
     showPhotography = true;
     showMenu = false;
-    console.log(showPhotography);
   } else {
     photographyWindow.classList.remove("show");
-    showPhotography = false;
   }
 }
