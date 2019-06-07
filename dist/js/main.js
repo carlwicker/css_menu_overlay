@@ -24,6 +24,7 @@ function fadeInOutMenu() {
   } else {
     overlayMenu.classList.remove("show");
     showMenu = false;
+    showPhotography = false;
   }
 }
 

@@ -11,8 +11,8 @@ body {
   position: fixed;
   top: 15px;
   right: 15px;
-  cursor: pointer;
   z-index: 2;
+  cursor: pointer;
 }
 
 #button-bar {
@@ -53,12 +53,14 @@ body {
   transition-timing-function: ease-out;
   z-index: 1;
   flex-direction: column;
+  visibility: hidden;
 
   &.show {
     background-color: #ccc;
     opacity: 0.8;
     transition-duration: 900ms;
     transition-timing-function: ease-out;
+    visibility: visible;
   }
 }
 
@@ -67,16 +69,20 @@ body {
   position: fixed;
   height: 100vh;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 
   &.show {
     background-color: red;
+    background-image: url("../img/background_photography.jpg");
+    background-position: center;
+    background-size: cover;
   }
 }
 
 .overlay-menu-items {
   margin: auto;
-  z-index: 1;
+  z-index: 0;
+  cursor: pointer;
 }
 
 .btn-home {
