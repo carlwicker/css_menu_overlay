@@ -44,7 +44,7 @@ body {
   height: 100vh;
   width: 100%;
   opacity: 0;
-  transition-duration: 900ms;
+  transition-duration: 2s;
   transition-timing-function: ease-out;
   z-index: 1;
   flex-direction: column;
@@ -52,21 +52,32 @@ body {
   .overlay-menu.show {
     background-color: #ccc;
     opacity: 0.8;
-    transition-duration: 900ms;
+    transition-duration: 2s;
     transition-timing-function: ease-out;
     visibility: visible; }
 
 .photography-window {
+  display: flex;
   color: white;
   position: fixed;
   height: 100vh;
   width: 100%;
-  z-index: 0; }
+  opacity: 0;
+  background-image: url("../img/background_photography.jpg");
+  background-position: center;
+  background-size: cover;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  z-index: 0;
+  visibility: hidden; }
   .photography-window.show {
     background-color: red;
-    background-image: url("../img/background_photography.jpg");
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    opacity: 0.8;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    visibility: visible; }
 
 .overlay-menu-items {
   margin: auto;
